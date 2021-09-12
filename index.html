@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="shortcut icon" type="image/png" href="./logo-starwar.png">
+    <link rel="stylesheet" href="error.css">
+</head>
+
+<body>
+    <input type="radio" name="color" id="green" checked="checked">
+    <label for="green">Green</label>
+    <input type="radio" name="color" id="blue">
+    <label for="blue">Blue</label>
+    <input type="radio" name="color" id="yellow">
+    <label for="yellow">Yellow</label>
+    <input type="radio" name="color" id="purple">
+    <label for="purple">Purple</label>
+    <input type="radio" name="color" id="red">
+    <label for="red">Red</label>
+    <input type="radio" name="color" id="dark">
+    <label for="dark">Dark Saber</label>
+    <div class="lightsaber">
+        <input type="checkbox" id="on-off" onclick="myFunction()">
+        <div class="blade"></div>
+        <label class="hilt" for="on-off"></label>
+        <p class="left"></p>
+        <p class="left-blade"></p>
+        <p class="right"></p>
+        <p class="right-blade"></p>
+    <script>
+        function myFunction(){
+            var audio = new Audio('lightsaber.mp3');
+            audio.play();
+            console.log("checked")
+        }
+    </script>
+    </div>
+</body>
+
+</html>
